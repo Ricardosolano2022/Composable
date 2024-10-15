@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #1e293b;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #facc15;
+  background-color: #dc2626;
+  padding: 10px;
+}
+
+.app-divider {
+  border: none;
+  border-top: 4px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.counters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.counter-card {
+  background-color: #fed7aa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.counter-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.counter-title {
+  margin: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.counter-values {
+  margin-bottom: 15px;
+}
+
+.counter-values h3 {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.counter-text {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.increment-btn,
+.decrement-btn {
+  padding: 15px 35px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+}
+
+.increment-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.increment-btn:hover {
+  background-color: #45a049;
+}
+
+.decrement-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.decrement-btn:hover {
+  background-color: #da190b;
+}
